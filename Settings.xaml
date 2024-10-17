@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="MyTest.Settings"
-             Title="Settings">
+             xmlns:local="clr-namespace:MyTest">
 
     <Grid>                                           <!--Выбор темы-->
         <Grid.RowDefinitions>
@@ -35,36 +36,37 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Label Text="Выбор темы: " Grid.Row="0" Margin="0" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <RadioButton Grid.Row="2" Grid.Column="0" Margin="0"/>
-        <RadioButton Grid.Row="2" Grid.Column="1" Margin="0"/>
-        <RadioButton Grid.Row="2" Grid.Column="2" Margin="0"/>
-        <RadioButton Grid.Row="2" Grid.Column="3" Margin="0"/>
+        
+           <RadioButton Grid.Row="2" Grid.Column="0" Margin="0" GroupName="Options" CheckedChanged="changeTheme1" x:Name="radioTestVidish"/>
+           <RadioButton Grid.Row="2" Grid.Column="1" Margin="0" GroupName="Options" CheckedChanged="changeTheme2"/>
+           <RadioButton Grid.Row="2" Grid.Column="2" Margin="0" GroupName="Options" CheckedChanged="changeTheme3"/>
+           <RadioButton Grid.Row="2" Grid.Column="3" Margin="0" GroupName="Options" CheckedChanged="changeTheme4"/>
+        
 
 
-
-            <Label Text="Язык(Language): " Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="20"/>
+        <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="25" x:Name="LABEL" Text="Язык(Language)"/>
        
-            <RadioButton Grid.Row="6" Grid.Column="0"/>
-            <Label Text="Русский" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"/>
-            <RadioButton Grid.Row="7" Grid.Column="0"/>
-            <Label Text="English" Grid.Row="7" Grid.Column="1"/>
+            <RadioButton Grid.Row="6" Grid.Column="0" GroupName="Language"/>
+            <Label Text="Русский" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="0, 7, 0, 0"/>
+            <RadioButton Grid.Row="7" Grid.Column="0" GroupName="Language"/>
+        <Label Text="English" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Margin="0, 7, 0, 0"/>
         <Grid Grid.Row="9" Grid.ColumnSpan="6">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="100"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Выбор уровня сложности: " Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="20"/>
-            <Button Text="Легко" Grid.Row="1" Grid.Column="0" BackgroundColor="White" TextColor="Black" WidthRequest="110" Margin="5" BorderColor="Black" BorderWidth="2"/>
-            <Button Text="Средне" Grid.Row="1" Grid.Column="1" BackgroundColor="White" TextColor="Black" WidthRequest="110" Margin="5" BorderColor="Black" BorderWidth="2"/>
-            <Button Text="Сложно" Grid.Row="1" Grid.Column="2" BackgroundColor="White" TextColor="Black" WidthRequest="110" Margin="5" BorderColor="Black" BorderWidth="2"/>
+            <Label Text="Выбор уровня сложности: " Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="0, 40, 0, 0"/>
+            <Button Text="Легко" Grid.Row="1" Grid.Column="0" BackgroundColor="White" TextColor="Black" WidthRequest="110" Margin="0" BorderColor="Black" BorderWidth="2"/>
+            <Button Text="Средне" Grid.Row="1" Grid.Column="1" BackgroundColor="White" TextColor="Black" WidthRequest="110" Margin="0" BorderColor="Black" BorderWidth="2"/>
+            <Button Text="Сложно" Grid.Row="1" Grid.Column="2" BackgroundColor="White" TextColor="Black" WidthRequest="110" Margin="0" BorderColor="Black" BorderWidth="2"/>
         </Grid>
 
     </Grid>

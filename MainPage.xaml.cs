@@ -6,23 +6,35 @@ using Microsoft.Maui.Graphics;
 using System.Threading;
 using MyTest;
 using System.Text;
+using System.Web;
 
 namespace MyTest
 {
     public partial class MainPage : ContentPage
     {
+       
         public static int Value;
         public static string Sample;
-        public Contact contact;
+        private ViewModel viewModel;
         public MainPage()
         {
+
             InitializeComponent();
+            viewModel = new ViewModel();
+            BindingContext = viewModel;
             var arr = ChangeText(150, 240, 10, 150);
             MainPage.Value = arr.Item2;
             MainPage.Sample = arr.Item1;
-            MyTask.Text = arr.Item1;
-            MyTask.TextColor = Colors.Black;
-            MyTask.FontSize = 70;
+            //MyTask.Text = arr.Item1;
+            string data = LocalStorage.GetValue();
+            
+            
+            
+            
+        }
+        private async void Settings(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Settings(viewModel));
             
         }
         public (string, int) ChangeText(int min = 150, int max = 240, int min2 = 10, int max2 = 150)
@@ -80,15 +92,15 @@ namespace MyTest
         private async void Done(object sender, EventArgs e)
         {
             if (Convert.ToString(MainPage.Value) == Convert.ToString(Place.Text))
-            {
+            { 
                 MyTask.Text = "Верно!";
                 await Task.Delay(1000);
                 var arr = ChangeText(150, 240, 10, 150);
                 MainPage.Value = arr.Item2;
                 MyTask.Text = arr.Item1;
-                MyTask.TextColor = Colors.Black;
-                MyTask.FontSize = 70;
                 Place.Text = string.Empty;
+
+                
             }
             else
             {
@@ -97,15 +109,8 @@ namespace MyTest
                 var arr = ChangeText(150, 240, 10, 150);
                 MainPage.Value = arr.Item2;
                 MyTask.Text = arr.Item1;
-                MyTask.TextColor = Colors.Black;
-                MyTask.FontSize = 70;
                 Place.Text = string.Empty;
             }
         }
-        private async void Settings(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Settings());
-        }
-
     }
 }

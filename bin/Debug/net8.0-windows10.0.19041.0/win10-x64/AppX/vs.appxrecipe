@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Mark\source\repos\MyTest\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-10T16:53:57.759</Modified>
+      <Modified>2024-10-17T13:53:27.788</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Mark\source\repos\MyTest\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-10T16:53:57.569</Modified>
+      <Modified>2024-10-17T13:53:27.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\source\repos\MyTest\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyTest.runtimeconfig.json">
       <PackagePath>MyTest.runtimeconfig.json</PackagePath>
-      <Modified>2024-10-10T16:53:57.264</Modified>
+      <Modified>2024-10-17T13:53:27.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\source\repos\MyTest\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyTest.dll">
       <PackagePath>MyTest.dll</PackagePath>
-      <Modified>2024-10-10T16:53:56.093</Modified>
+      <Modified>2024-10-17T13:53:27.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\source\repos\MyTest\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyTest.exe</PackagePath>
-      <Modified>2024-10-10T16:53:56.110</Modified>
+      <Modified>2024-10-17T13:53:27.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\source\repos\MyTest\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\source\repos\MyTest\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MyTest.deps.json">
       <PackagePath>MyTest.deps.json</PackagePath>
-      <Modified>2024-10-10T16:53:57.104</Modified>
+      <Modified>2024-10-17T13:53:27.510</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mark\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

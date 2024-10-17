@@ -8,8 +8,11 @@
     Title="MyTest">
 
     <ShellContent
-        Title="Home"
+        Title="Brain Arithmetic"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
+    <ShellContent
+        Title="Настройки"
+        ContentTemplate="{DataTemplate local:Settings}"
+        Route="Settings"/>
 </Shell>

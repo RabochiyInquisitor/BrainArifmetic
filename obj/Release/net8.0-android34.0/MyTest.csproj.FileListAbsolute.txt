@@ -457,3 +457,4 @@ C:\Users\Mark\source\repos\MyTest\obj\Release\net8.0-android34.0\resizetizer\sp\
 C:\Users\Mark\source\repos\MyTest\obj\Release\net8.0-android34.0\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\Mark\source\repos\MyTest\obj\Release\net8.0-android34.0\resizetizer\f\OpenSans-Semibold.ttf
 C:\Users\Mark\source\repos\MyTest\obj\Release\net8.0-android34.0\resizetizer\C4D2D85887AD60AD-files.cache
+C:\Users\Mark\source\repos\MyTest\obj\Release\net8.0-android34.0\MyTest.sourcelink.json
